@@ -1,10 +1,10 @@
 import { ConfigProvider } from "antd";
 import { BrowserRouter } from "react-router-dom";
 import styles from "./App.module.scss";
-import { LoggedIn } from "./components/Common/LoggedIn";
-import { LoginForm } from "./components/Common/LoginForm";
 import { Dashboard } from "./components/Dashboard";
-import { theme } from "./styles/theme";
+import { theme } from "@styles/theme";
+import { LoggedIn } from "../uac/components/LoggedIn";
+import { LoginForm } from "../uac/components/LoginForm";
 
 const App = () => 
 <ConfigProvider theme={theme}>
