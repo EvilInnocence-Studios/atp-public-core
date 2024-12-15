@@ -8,3 +8,12 @@ export declare interface IDashboardInputProps {
 }
 
 export type DashboardProps = IDashboardInputProps & IDashboardProps;
+
+export interface IRouteConfig {
+    path: string;
+    component: React.ComponentType<any>;
+}
+
+export interface DashboardProps {
+    routes: RouteConfig[];
+}
