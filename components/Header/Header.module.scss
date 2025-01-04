@@ -1,0 +1,38 @@
+@use "@styles/globals.module.scss";
+
+.pageHeader {
+    .socialLinks {
+        padding: 0 globals.$padding;
+        float: left;
+        font-size: x-large;
+        font-weight: bold;
+        > * {
+            margin: 0 globals.$padding-sm;
+            padding: 0;
+            display: inline-block;
+        }
+        > span {
+            width: 256px;
+            padding: globals.$padding;
+        }
+    }
+    .account, .cart {
+        float: right;
+        font-weight: bold;
+        > * {
+            padding: 0;
+            display: inline-block;
+        }
+    }
+    .cart {
+        font-size: x-large;
+        margin-left: 0;
+        padding: 0 globals.$padding-lg 0 globals.$padding;
+    }
+    .search {
+        padding: globals.$padding;
+        width: 25%;
+        margin: auto;
+
+    }
+}

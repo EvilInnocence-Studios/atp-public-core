@@ -1,8 +1,7 @@
-import { TagManager } from "@common/components/TagManager";
-import { HomePage } from "@admin/components/HomePage";
+import { HomePage } from "@public/components/HomePage";
 
-export const adminRoutes = {
-    admin: [
+export const publicRoutes = {
+    public: [
         {path: "/", component: HomePage},
     ]
 }
