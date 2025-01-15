@@ -8,6 +8,7 @@ import { HeaderProps } from "./Header.d";
 import styles from './Header.module.scss';
 import { Link } from "react-router-dom";
 import { onInputChange } from "@core/lib/onInputChange";
+import { CartBtn } from "@store/components/CartBtn";
 
 export const HeaderComponent = ({search, setSearch, runSearch}:HeaderProps) =>
     <div className={styles.pageHeader}>
@@ -18,7 +19,7 @@ export const HeaderComponent = ({search, setSearch, runSearch}:HeaderProps) =>
             <a href={`https://www.instagram.com/${config().social.instagram}`} target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
         </div>
         <div className={styles.cart}>
-            <Link to="/cart"><FontAwesomeIcon icon={faCartShopping} /></Link>
+            <CartBtn />
         </div>
         <div className={styles.account}>
             <AccountMenu />
