@@ -1,0 +1,5 @@
+@use "@styles/globals.module.scss";
+
+.aboutUs {
+    @include globals.cmsPage;
+}

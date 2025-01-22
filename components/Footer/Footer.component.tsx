@@ -41,7 +41,7 @@ export const FooterComponent = ({}:FooterProps) =>
                 <li><Link to="/faq">FAQ</Link></li>
                 <li><Link to="/contacts">Contact Us</Link></li>
                 <li><Link to="/3d-content-license">3D Content Licensing</Link></li>
-                <li><Link to="/software-licensing">Terms of Service</Link></li>
+                <li><Link to="/software-license">Software Licensing</Link></li>
                 <li><Link to="/policies">Policies</Link></li>
             </ul>
         </Col>
