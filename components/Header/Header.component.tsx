@@ -1,14 +1,13 @@
 import { config } from "@config";
+import { onInputChange } from "@core/lib/onInputChange";
 import { faBluesky, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { CartBtn } from "@store/components/CartBtn";
 import { AccountMenu } from "@uac/components/AccountMenu";
 import { Input } from "antd";
+import { Link } from "react-router-dom";
 import { HeaderProps } from "./Header.d";
 import styles from './Header.module.scss';
-import { Link } from "react-router-dom";
-import { onInputChange } from "@core/lib/onInputChange";
-import { CartBtn } from "@store/components/CartBtn";
 
 export const HeaderComponent = ({search, setSearch, runSearch}:HeaderProps) =>
     <div className={styles.pageHeader}>
