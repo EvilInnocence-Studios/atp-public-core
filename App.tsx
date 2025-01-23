@@ -8,7 +8,10 @@ import { config } from "@config";
 
 const App = () => 
   <ConfigProvider theme={theme}>
-    <PayPalScriptProvider options={{ "clientId": config().paypal.clientId }}>
+    <PayPalScriptProvider options={{
+      "clientId": config().paypal.clientId,
+      vault: true,
+    }}>
       <BrowserRouter>
         <div className={styles.app}>
           <Layout />
