@@ -5,7 +5,12 @@ import { BrowserRouter } from "react-router-dom";
 import styles from "./App.module.scss";
 import { Layout } from "./components/Layout";
 import { config } from "@config";
+import { Spin } from 'antd';
 
+Spin.setDefaultIndicator(<div className={styles.spinnerContainer}>
+  <div className={styles.spinner}>&nbsp;</div>
+  <img src="/logo.png" />
+</div>);
 const App = () => 
   <ConfigProvider theme={theme}>
     <PayPalScriptProvider options={{
