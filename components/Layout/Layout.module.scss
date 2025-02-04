@@ -1,1 +1,7 @@
 @use "@styles/globals.module.scss";
+
+.content {
+    @media (max-width: 570px) {
+        margin-top: 32px;
+    }
+}

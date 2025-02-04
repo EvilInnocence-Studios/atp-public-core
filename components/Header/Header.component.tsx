@@ -17,18 +17,18 @@ export const HeaderComponent = ({search, setSearch, runSearch}:HeaderProps) =>
             <a href={`https://bsky.app/profile/${config().social.blueSky}`} target="_blank"><FontAwesomeIcon icon={faBluesky} /></a>
             <a href={`https://www.instagram.com/${config().social.instagram}`} target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
         </div>
-        <div className={styles.cart}>
-            <CartBtn />
+        <div className={styles.search}>
+            <Input.Search
+                value={search}
+                placeholder="Search products"
+                onChange={onInputChange(setSearch)}
+                onSearch={runSearch}
+            />
         </div>
         <div className={styles.account}>
             <AccountMenu />
         </div>
-        <div className={styles.search}>
-            <Input.Search
-                value={search}
-                placeholder="Search"
-                onChange={onInputChange(setSearch)}
-                onSearch={runSearch}
-            />
+        <div className={styles.cart}>
+            <CartBtn />
         </div>
     </div>;
