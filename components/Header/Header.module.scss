@@ -4,6 +4,10 @@
     display: flex;
     flex-wrap: wrap;
     .socialLinks {
+        width: 320px;
+        padding: 0 globals.$padding;
+        font-size: x-large;
+        font-weight: bold;
         @media (max-width: 1160px) {
             width: 200px;
             a:first-child {
@@ -18,10 +22,6 @@
         @media (max-width: 570px) {
             width: calc(100% - 128px);
         }
-        width: 320px;
-        padding: 0 globals.$padding;
-        font-size: x-large;
-        font-weight: bold;
         > * {
             margin: 0 globals.$padding-sm;
             padding: 0;
