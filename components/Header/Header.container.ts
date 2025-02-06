@@ -1,28 +1,22 @@
-import { createInjector, inject, mergeProps } from "unstateless";
-import {HeaderComponent} from "./Header.component";
-import {IHeaderInputProps, HeaderProps, IHeaderProps} from "./Header.d";
+import { useSearch } from "@store/lib/useSearch";
 import { useEffect, useState } from "react";
-import { useNavigate, useSearchParams } from "react-router";
+import { createInjector, inject, mergeProps } from "unstateless";
+import { HeaderComponent } from "./Header.component";
+import { HeaderProps, IHeaderInputProps, IHeaderProps } from "./Header.d";
 
 const injectHeaderProps = createInjector(({}:IHeaderInputProps):IHeaderProps => {
-    const [query, setQuery] = useSearchParams();
-    const [search, setSearch] = useState(query.get('q') || '');
-
-    const navigate = useNavigate();
+    const {q, search} = useSearch();
+    const [query, setQuery] = useState(q);
 
     useEffect(() => {
-        setSearch(query.get('q') || '');
-    }, [query.get('q')])
+        setQuery(q);
+    }, [q]);
 
     const runSearch = () => {
-        setQuery(q => {
-            q.set('q', search);
-            return q;
-        });
-        navigate(`/products?q=${search}`);
+        search(query);
     }
 
-    return {search, setSearch, runSearch};
+    return {query, setQuery, runSearch};
 });
 
 const connect = inject<IHeaderInputProps, HeaderProps>(mergeProps(

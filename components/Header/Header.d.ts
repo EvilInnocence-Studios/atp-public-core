@@ -1,8 +1,8 @@
 import { Setter } from "unstateless";
 
 export declare interface IHeaderProps {
-    search: string;
-    setSearch: Setter<string>;
+    query?: string;
+    setQuery: Setter<string | undefined>;
     runSearch: () => void;
 }
 

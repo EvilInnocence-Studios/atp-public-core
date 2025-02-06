@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { HeaderProps } from "./Header.d";
 import styles from './Header.module.scss';
 
-export const HeaderComponent = ({search, setSearch, runSearch}:HeaderProps) =>
+export const HeaderComponent = ({query, setQuery, runSearch}:HeaderProps) =>
     <div className={styles.pageHeader}>
         <div className={styles.socialLinks}>
             <Link to="/">EvilInnocence</Link>
@@ -19,9 +19,9 @@ export const HeaderComponent = ({search, setSearch, runSearch}:HeaderProps) =>
         </div>
         <div className={styles.search}>
             <Input.Search
-                value={search}
+                value={query}
                 placeholder="Search products"
-                onChange={onInputChange(setSearch)}
+                onChange={onInputChange(setQuery)}
                 onSearch={runSearch}
             />
         </div>
