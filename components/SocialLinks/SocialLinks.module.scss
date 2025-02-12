@@ -1,0 +1,31 @@
+@use "@styles/globals.module.scss";
+
+.socialLinks {
+    width: 320px;
+    padding: 0 globals.$padding;
+    font-size: x-large;
+    font-weight: bold;
+    @media (max-width: 1160px) {
+        width: 200px;
+        a:first-child {
+            text-indent: -999999px;
+            width: 32px;
+            background-image: url('/logo.png');
+            background-size: 32px;
+            background-repeat: no-repeat;
+            background-position: 0 16px;
+        }
+    }
+    @media (max-width: 570px) {
+        width: calc(100% - 128px);
+    }
+    > * {
+        margin: 0 globals.$padding-sm;
+        padding: 0;
+        display: inline-block;
+    }
+    > span {
+        width: 256px;
+        padding: globals.$padding;
+    }
+}
