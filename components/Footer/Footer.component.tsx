@@ -21,9 +21,7 @@ export const FooterComponent = ({}:FooterProps) =>
                 <li><Link to="/products">XD Morph Packs</Link></li>
                 <li><Link to="/products">Utilities</Link></li>
                 <li><Link to="/products">Freebies</Link></li>
-                <li><Link to="/products">XD Licenses</Link></li>
                 <li><Link to="/freebies">Morphs</Link></li>
-                <li><Link to="/freebies">Original Figures</Link></li>
                 <li><Link to="/backstage-pass">Backstage Pass</Link></li>
                 <li><Link to="/tutorials">Tutorials</Link></li>
                 <li><Link to="/about">About Us</Link></li>
