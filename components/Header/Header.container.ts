@@ -13,7 +13,7 @@ const injectHeaderProps = createInjector(({}:IHeaderInputProps):IHeaderProps => 
     }, [q]);
 
     const runSearch = () => {
-        search(query);
+        search(query || "", true);
     }
 
     return {query, setQuery, runSearch};
