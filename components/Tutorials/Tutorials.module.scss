@@ -1,0 +1,28 @@
+@use "@styles/globals.module.scss";
+
+.cmsPage {
+    padding: globals.$padding;
+}
+
+.tutorials {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    .tutorialItem {
+        flex-grow: 1;
+        max-width: 30%;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid globals.$brand-border;
+        border-radius: 5px;
+        box-shadow: 0 0 10px globals.$brand-bg;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px globals.$brand-bg;
+        }
+
+    }
+}
