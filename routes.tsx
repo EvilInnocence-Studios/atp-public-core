@@ -23,6 +23,10 @@ import { UsingTnT } from "./components/UsingTnT";
 import { UsingFairyMagic } from "./components/UsingFairyMagic";
 import { DazStudioFurShaders } from "./components/DazStudioFurShaders";
 import { Poser5Fur } from "./components/Poser5Fur";
+import { CrossDresser } from "./components/CrossDresser";
+import { UniversalClothing } from "./components/UniversalClothing";
+import { XDConverter } from "./components/XDConverter";
+import { XDMorpher } from "./components/XDMorpher";
 
 export const publicRoutes = {
     public: [
@@ -51,5 +55,9 @@ export const publicRoutes = {
         {path: "/using-fairy-magic",               component: UsingFairyMagic            },
         {path: "/daz-studio-fur-shaders",          component: DazStudioFurShaders        },
         {path: "/rendering-fur-in-poser-5",        component: Poser5Fur                  },
+        {path: "/crossdresser",                    component: CrossDresser               },
+        {path: "/universal-clothing",              component: UniversalClothing          },
+        {path: "/crossdresser-converter",          component: XDConverter                },
+        {path: "/xd-morpher",                      component: XDMorpher                  },
     ]
 }

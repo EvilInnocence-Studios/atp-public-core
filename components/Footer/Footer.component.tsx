@@ -23,6 +23,7 @@ export const FooterComponent = ({}:FooterProps) =>
                 <li><Link to="/products">Freebies</Link></li>
                 <li><Link to="/freebies">Morphs</Link></li>
                 <li><Link to="/backstage-pass">Backstage Pass</Link></li>
+                <li><Link to="/crossdresser">XD Clothing Converter</Link></li>
                 <li><Link to="/tutorials">Tutorials</Link></li>
                 <li><Link to="/about">About Us</Link></li>
                 <li><Link to="/faq">FAQ</Link></li>

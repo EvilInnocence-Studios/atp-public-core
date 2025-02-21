@@ -1,0 +1,27 @@
+@use "@styles/globals.module.scss";
+
+.cmsPage {
+    @include globals.cmsPage;
+    .download {
+        button {
+            display: block;
+            margin: auto;
+        }
+    }
+    .xdBlurb {
+        margin-top: globals.$padding-lg;
+        border: solid 1px globals.$brand-border;
+        border-radius: globals.$border-radius;
+        padding: globals.$padding;
+        h2 {
+            margin: -(globals.$padding);
+            margin-bottom: globals.$padding;
+            background-color: globals.$brand-bg;
+            padding: globals.$padding-sm;
+            border-radius: globals.$border-radius;
+        }
+        p {
+            margin-bottom: globals.$padding-lg;
+        }
+    }
+}

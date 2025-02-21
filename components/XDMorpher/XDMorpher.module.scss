@@ -1,0 +1,8 @@
+@use "@styles/globals.module.scss";
+
+.cmsPage {
+    @include globals.cmsPage;
+    :global(.ant-btn) {
+        width: 100%;
+    }
+}
