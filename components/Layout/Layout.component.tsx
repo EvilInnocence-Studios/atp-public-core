@@ -5,6 +5,7 @@ import { Footer } from "../Footer";
 import { Header } from "../Header";
 import { LayoutProps } from "./Layout.d";
 import styles from './Layout.module.scss';
+import { NotFoundPage } from "../NotFoundPage";
 
 export const LayoutComponent = ({}:LayoutProps) =>
     <Layout>
@@ -21,6 +22,7 @@ export const LayoutComponent = ({}:LayoutProps) =>
                 {config().routes.map((route, index) => (
                     <Route key={index} path={route.path} Component={route.component} />
                 ))}
+                <Route path="*" Component={NotFoundPage} />
             </Routes>
         </Layout.Content>
         <Layout.Footer>
