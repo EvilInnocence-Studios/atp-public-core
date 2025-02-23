@@ -6,7 +6,6 @@
     justify-content: space-between;
     .socialLinksContainer {
         margin-top: 22px;
-        padding-right: 128px;
         text-align: right;
     }
     ul {
@@ -14,6 +13,16 @@
         padding: 0;
         columns: 4;
         width: 100%;
+        @media (max-width: 1430px) {
+            columns: 3;
+        }
+        @media (max-width: 1070px) {
+            columns: 2;
+        }
+        @media (max-width: 790px) {
+            columns: 1;
+        }
+
         li {
             display: block;
             padding: globals.$padding;

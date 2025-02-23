@@ -4,9 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router";
 import { SocialLinksProps } from "./SocialLinks.d";
 import styles from './SocialLinks.module.scss';
+import clsx from "clsx";
 
-export const SocialLinksComponent = ({multiline}:SocialLinksProps) =>
-    <div className={styles.socialLinks}>
+export const SocialLinksComponent = ({multiline, showLogoWhenSmall}:SocialLinksProps) =>
+    <div className={clsx([styles.socialLinks, showLogoWhenSmall && styles.shrink])}>
         <Link to="/">EvilInnocence</Link>
         {multiline && <br />}
         <a href={`https://twitter.com/${config().social.twitter}`} target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>

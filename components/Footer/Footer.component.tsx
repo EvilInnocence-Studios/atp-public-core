@@ -7,12 +7,12 @@ import Mailchimp from 'react-mailchimp-form';
 
 export const FooterComponent = ({}:FooterProps) =>
     <Row gutter={16} className={styles.footer}>
-        <Col xs={6}>
+        <Col xs={24} sm={6}>
             <div className={styles.socialLinksContainer}>
                 <SocialLinks multiline />
             </div>
         </Col>
-        <Col xs={12}>
+        <Col xs={24} sm={12}>
             <ul>
                 <li><Link to="/products">Brokered Products</Link></li>
                 <li><Link to="/products">Original Figures</Link></li>
@@ -33,7 +33,7 @@ export const FooterComponent = ({}:FooterProps) =>
                 <li><Link to="/policies">Policies</Link></li>
             </ul>
         </Col>
-        <Col xs={6} className={styles.newsletter}>
+        <Col xs={24} sm={6} className={styles.newsletter}>
             <h2>Subscribe to our Newsletter!</h2>
             <h3>Get notified when we have new products and sales!</h3>
             <Mailchimp
