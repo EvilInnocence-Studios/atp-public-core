@@ -5,7 +5,7 @@ import { Footer } from "../Footer";
 import { Header } from "../Header";
 import { LayoutProps } from "./Layout.d";
 import styles from './Layout.module.scss';
-import { NotFoundPage } from "../NotFoundPage";
+import { NotFoundPage } from "@core/components/NotFoundPage";
 
 export const LayoutComponent = ({}:LayoutProps) =>
     <Layout>
