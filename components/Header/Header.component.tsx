@@ -8,7 +8,7 @@ import styles from './Header.module.scss';
 
 export const HeaderComponent = ({query, setQuery, runSearch}:HeaderProps) =>
     <div className={styles.pageHeader}>
-        <SocialLinks showLogoWhenSmall/>
+        <SocialLinks showLogoWhenSmall showShopLink/>
         <div className={styles.search}>
             <Input.Search
                 value={query}

@@ -6,6 +6,8 @@ export declare interface ISocialLinksProps {
 export declare interface ISocialLinksInputProps {
     multiline?: boolean;
     showLogoWhenSmall?: boolean;
+    showSocialLinks?: boolean;
+    showShopLink?: boolean;
 }
 
 export type SocialLinksProps = ISocialLinksInputProps & ISocialLinksProps;
