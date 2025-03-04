@@ -22,13 +22,6 @@ export const CrossDresserComponent = ({}:CrossDresserProps) =>
                 <p>downloads the installer for XD, XD Morpher, and support files for Universal Clothing. (requires Windows XP or newer)</p>
             </p>
             <div className={styles.xdBlurb}>
-                <h2><Link to="/universal-clothing">Universal</Link></h2>
-                <p>Converting clothing from one character to another couldn't be any easier!</p>
-                <p>The <Link to="/universal-clothing">Universal Clothing plugins</Link> for Poser and DAZ Studio seamlessly integrate CrossDresser technology directly into your clothing runtime.</p>
-                <p>Now, converting clothing between character is no harder than loading a regular clothing.</p>
-                <p>&nbsp;</p>
-            </div>
-            <div className={styles.xdBlurb}>
                 <h2><Link to="/crossdresser-converter">XD</Link></h2>
                 <p>Your favorite character will never be jealous of someone else's closet ever again!</p>
                 <p><Link to="/crossdresser-converter">XD</Link> is a one-click clothing conversion utility for Poser and DAZ Studio.</p>
@@ -39,6 +32,13 @@ export const CrossDresserComponent = ({}:CrossDresserProps) =>
                 <h2><Link to="/xd-morpher">XD Morpher</Link></h2>
                 <p>Fit any clothing to any character, regardless of shape and size!</p>
                 <p>The <Link to="/xd-morpher">XD Morpher</Link> utility enhances your clothing by adding in full body morphs and adjustment morphs</p>
+            </div>
+            <div className={styles.xdBlurb}>
+                <h2><Link to="/universal-clothing">Universal</Link></h2>
+                <p>Converting clothing from one character to another couldn't be any easier!</p>
+                <p>The <Link to="/universal-clothing">Universal Clothing plugins</Link> for Poser and DAZ Studio seamlessly integrate CrossDresser technology directly into your clothing runtime.</p>
+                <p>Now, converting clothing between character is no harder than loading a regular clothing.</p>
+                <p>&nbsp;</p>
             </div>
         </div>
     </div>;
