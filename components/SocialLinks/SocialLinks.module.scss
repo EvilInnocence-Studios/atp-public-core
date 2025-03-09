@@ -29,6 +29,12 @@
         padding: globals.$padding;
     }
     .shopLink {
+        display: inline-block;
+        padding: 0;
+        @include globals.splashButton;
         margin-left: 32px;
+        a {
+            padding: globals.$padding-sm globals.$padding-lg;
+        }
     }
 }

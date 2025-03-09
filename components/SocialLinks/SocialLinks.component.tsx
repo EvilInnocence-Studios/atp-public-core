@@ -15,5 +15,7 @@ export const SocialLinksComponent = ({multiline, showLogoWhenSmall, showShopLink
             <a href={`https://bsky.app/profile/${config().social.blueSky}`} target="_blank"><FontAwesomeIcon icon={faBluesky} /></a>
             <a href={`https://www.instagram.com/${config().social.instagram}`} target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
         </>}
-        {showShopLink && <Link className={styles.shopLink} to="/products">Shop</Link>}
+        {showShopLink && <span className={styles.shopLink}>
+            <Link to="/products">Shop</Link>
+        </span>}
     </div>;
