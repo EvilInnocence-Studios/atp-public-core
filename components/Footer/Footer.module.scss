@@ -53,17 +53,8 @@
             margin-bottom: globals.$padding-sm;
         }
         button {
+            @include globals.splashButtonLink;
             width: 100%;
-            padding: globals.$padding-sm;
-            border: 2px solid globals.$brand-border;
-            border-radius: 4px;
-            font-size: 16px;
-            background-color: globals.$brand-primary;
-            color: globals.$brand-bg;
-            &:hover {
-                background-color: globals.$brand-bg;
-                color: globals.$brand-primary;
-            }
         }
     }
 }

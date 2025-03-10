@@ -14,14 +14,14 @@ export const FooterComponent = ({}:FooterProps) =>
         </Col>
         <Col xs={24} sm={12}>
             <ul>
-                <li><Link to="/products">Brokered Products</Link></li>
-                <li><Link to="/products">Original Figures</Link></li>
-                <li><Link to="/products">Clothing</Link></li>
-                <li><Link to="/products">XD Licenses</Link></li>
-                <li><Link to="/products">XD Morph Packs</Link></li>
-                <li><Link to="/products">Utilities</Link></li>
-                <li><Link to="/products">Freebies</Link></li>
-                <li><Link to="/freebies">Morphs</Link></li>
+                <li><Link to="/products?tags=1048455126644686849&page=1">Brokered Products</Link></li>
+                <li><Link to="/products?page=1&tags=1046081212363571201">Original Figures</Link></li>
+                <li><Link to="/products?tags=1046081212363046913&page=1">Clothing</Link></li>
+                <li><Link to="/products?page=1&tags=1046081212363603969&q=license">XD Licenses</Link></li>
+                <li><Link to="/products?page=1&tags=1046081212363603969&q=morph">XD Morph Packs</Link></li>
+                <li><Link to="/products?tags=1046081212363472897&page=1">Utilities</Link></li>
+                <li><Link to="/products?tags=1046081212364324865&page=1">Freebies</Link></li>
+                <li><Link to="/products?page=1&tags=1046081212363440129">Morphs</Link></li>
                 <li><Link to="/backstage-pass">Backstage Pass</Link></li>
                 <li><Link to="/crossdresser">XD Clothing Converter</Link></li>
                 <li><Link to="/tutorials">Tutorials</Link></li>
