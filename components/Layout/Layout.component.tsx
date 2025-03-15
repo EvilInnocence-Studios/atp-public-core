@@ -1,13 +1,12 @@
 import { config } from "@config";
+import { NotFoundPage } from "@core/components/NotFoundPage";
+import { LoginModal } from "@uac/components/LoginModal";
 import { Layout } from "antd";
 import { Route, Routes } from "react-router";
 import { Footer } from "../Footer";
 import { Header } from "../Header";
 import { LayoutProps } from "./Layout.d";
 import styles from './Layout.module.scss';
-import { NotFoundPage } from "@core/components/NotFoundPage";
-import { LoginForm } from "@uac/components/LoginForm";
-import { LoginModal } from "@uac/components/LoginModal";
 
 export const LayoutComponent = ({loginModal}:LayoutProps) =>
     <Layout>
