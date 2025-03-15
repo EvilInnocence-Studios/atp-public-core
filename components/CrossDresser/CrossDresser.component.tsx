@@ -12,14 +12,14 @@ export const CrossDresserComponent = ({}:CrossDresserProps) =>
         <div className={styles.cmsPageContent}>
             <div className={styles.banner}>
                 <Link to="/shop/store/shop-by-category/crossdresser">
-                    <img src={banner} alt="CrossDresser 4.0 Utility Suite" />
+                    <img src={banner} alt="XD 4.0 Utility Suite" />
                 </Link>
             </div>
             <p className={styles.download}>
                 <Button type="primary" size="large" onClick={() => {location.href="https://evilinnocence.s3.amazonaws.com/xd-updater/XD%204%20Installer.zip"}}>
-                    <FontAwesomeIcon icon={faDownload} /> Download the XD Utility Suite
+                    <FontAwesomeIcon icon={faDownload} /> Download the XD Utility Suite<br />
+                    <em>(XD, XD Morpher, and Universal Clothing)</em>
                 </Button>
-                <p>downloads the installer for XD, XD Morpher, and support files for Universal Clothing. (requires Windows XP or newer)</p>
             </p>
             <div className={styles.xdBlurb}>
                 <h2><Link to="/crossdresser-converter">XD</Link></h2>
@@ -36,7 +36,7 @@ export const CrossDresserComponent = ({}:CrossDresserProps) =>
             <div className={styles.xdBlurb}>
                 <h2><Link to="/universal-clothing">Universal</Link></h2>
                 <p>Converting clothing from one character to another couldn't be any easier!</p>
-                <p>The <Link to="/universal-clothing">Universal Clothing plugins</Link> for Poser and DAZ Studio seamlessly integrate CrossDresser technology directly into your clothing runtime.</p>
+                <p>The <Link to="/universal-clothing">Universal Clothing plugins</Link> for Poser and DAZ Studio seamlessly integrate XD technology directly into your clothing runtime.</p>
                 <p>Now, converting clothing between character is no harder than loading a regular clothing.</p>
                 <p>&nbsp;</p>
             </div>

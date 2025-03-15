@@ -2,4 +2,7 @@
 
 .cmsPage {
     @include globals.cmsPage;
+    :global(.ant-btn) {
+        width: 100%;
+    }
 }

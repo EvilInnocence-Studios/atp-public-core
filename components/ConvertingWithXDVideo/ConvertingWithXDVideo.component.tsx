@@ -4,6 +4,6 @@ import styles from './ConvertingWithXDVideo.module.scss';
 
 export const ConvertingWithXDVideoComponent = ({}:ConvertingWithXDVideoProps) =>
     <div className={styles.cmsPage}>
-        <h1>Converting with CrossDresser Video</h1>
+        <h1>Converting with XD Video</h1>
         <YouTube videoId="7m2PPkJg2Yc" />
     </div>;

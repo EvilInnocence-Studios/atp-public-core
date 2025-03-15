@@ -19,45 +19,45 @@ export const TutorialsComponent = ({}:TutorialsProps) =><div className={styles.c
         </li>
         <li className={styles.tutorialItem}>
             <h2><Link to="/xd-setup-tutorial/">
-            Installing CrossDresser</Link></h2>
+            Installing XD</Link></h2>
             <div>
-            How to download and install the CrossDresser clothing conversion utility.</div>
+            How to download and install the XD clothing conversion utility.</div>
         </li>
         <li className={styles.tutorialItem}>
             <h2><Link to="/install-crossdresser-video/">
-            Installing CrossDresser Video</Link></h2>
+            Installing XD Video</Link></h2>
             <div>
-            How to download and install the CrossDresser clothing conversion utility.</div>
+            How to download and install the XD clothing conversion utility.</div>
         </li>
         <li className={styles.tutorialItem}>
             <h2><Link to="/xd-conversion-tutorial/">
-            Converting with CrossDresser</Link></h2>
+            Converting with XD</Link></h2>
             <div>
-            How to use the CrossDresser clothing conversion utility.</div>
+            How to use the XD clothing conversion utility.</div>
         </li>
         <li className={styles.tutorialItem}>
             <h2><Link to="/using-crossdresser-video/">
-            Converting with CrossDresser Video</Link></h2>
+            Converting with XD Video</Link></h2>
             <div>
-            How to use the CrossDresser clothing conversion utility.</div>
+            How to use the XD clothing conversion utility.</div>
         </li>
         <li className={styles.tutorialItem}>
             <h2><Link to="/using-crossdresser-with-genesis/">
-            Using CrossDresser with Genesis</Link></h2>
+            Using XD with Genesis</Link></h2>
             <div>
-            How to use the CrossDresser to convert clothing to and from DAZ's Genesis figure.</div>
+            How to use the XD to convert clothing to and from DAZ's Genesis figure.</div>
         </li>
         <li className={styles.tutorialItem}>
             <h2><Link to="/xd-pose-tutorial/">
-            Fixing Pokethrough with CrossDresser</Link></h2>
+            Fixing Pokethrough with XD</Link></h2>
             <div>
             How to fix poke-through on converted clothing.</div>
         </li>
         <li className={styles.tutorialItem}>
             <h2><Link to="/xd-skirt-tutorial/">
-            Handling Skirts and Dresses in CrossDresser</Link></h2>
+            Handling Skirts and Dresses in XD</Link></h2>
             <div>
-            Tips for converting skirts and dresses with the CrossDresser clothing conversion utility.</div>
+            Tips for converting skirts and dresses with the XD clothing conversion utility.</div>
         </li>
         <li className={styles.tutorialItem}>
             <h2><Link to="/xd-location-tutorial/">
@@ -67,9 +67,9 @@ export const TutorialsComponent = ({}:TutorialsProps) =><div className={styles.c
         </li>
         <li className={styles.tutorialItem}>
             <h2><Link to="/xd-license-tutorial/">
-            Installing CrossDresser Figure Licenses</Link></h2>
+            Installing XD Figure Licenses</Link></h2>
             <div>
-            How to install figure licenses for the CrossDresser clothing conversion utility.</div>
+            How to install figure licenses for the XD clothing conversion utility.</div>
         </li>
         <li className={styles.tutorialItem}>
             <h2><Link to="/xd-pose-fix-tutorial/">
@@ -79,9 +79,9 @@ export const TutorialsComponent = ({}:TutorialsProps) =><div className={styles.c
         </li>
         <li className={styles.tutorialItem}>
             <h2><Link to="/xd-runtime-tutorial/">
-            Why can't CrossDresser find my Runtimes when they are on a networked drive?</Link></h2>
+            Why can't XD find my Runtimes when they are on a networked drive?</Link></h2>
             <div>
-            How to add network folders to CrossDresser's Runtime list.</div>
+            How to add network folders to XD's Runtime list.</div>
         </li>
         <li className={styles.tutorialItem}>
             <h2><Link to="/using-tnt/">

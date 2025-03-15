@@ -7,15 +7,15 @@ export const InstallingUniversalClothingComponent = ({}: InstallingUniversalClot
     <h1>Installing and Using Universal Clothing</h1>
     <div>
       <p>
-        The Universal Clothing plugins for Poser and DAZ Studio rely on CrossDresser technology. In order to use Universal Clothing, you need to install CrossDresser as well as the Universal plugin. The following steps describe how to get started with using Universal Clothing.
+        The Universal Clothing plugins for Poser and DAZ Studio rely on XD technology. In order to use Universal Clothing, you need to install XD as well as the Universal plugin. The following steps describe how to get started with using Universal Clothing.
       </p>
       <h2>Installing All Required Software</h2>
       <ol>
         <li>
-          Install and/or update <Link to="/crossdresser">CrossDresser</Link>: <Link to="/xd-setup-tutorial/">Read the tutorial</Link> or <Link to="/install-crossdresser-video/">watch the video</Link> for complete instructions on how to install CrossDresser. If you already have CrossDresser installed, then run the XD Updater to get the latest version. Also make sure to update all figure you have installed.
+          Install and/or update <Link to="/crossdresser">XD</Link>: <Link to="/xd-setup-tutorial/">Read the tutorial</Link> or <Link to="/install-crossdresser-video/">watch the video</Link> for complete instructions on how to install XD. If you already have XD installed, then run the XD Updater to get the latest version. Also make sure to update all figure you have installed.
         </li>
         <li>
-          Install CrossDresser licenses: You will need a CrossDresser license for each figure you wish to use Universal Clothing on. You can purchase most of our licenses in our <Link to="/store/shop-by-category/crossdresser/licenses.html">store</Link>, and download the rest in our <Link to="/free-stuff/crossdresser-licenses.html">free stuff section</Link>. Then you can <Link to="/xd-license-tutorial/">read the tutorial</Link> or <Link to="/install-crossdresser-video/">watch the video</Link> for complete instructions on how to install the figure licenses.
+          Install XD licenses: You will need an XD license for each figure you wish to use Universal Clothing on. You can purchase most of our licenses in our <Link to="/store/shop-by-category/crossdresser/licenses.html">store</Link>, and download the rest in our <Link to="/free-stuff/crossdresser-licenses.html">free stuff section</Link>. Then you can <Link to="/xd-license-tutorial/">read the tutorial</Link> or <Link to="/install-crossdresser-video/">watch the video</Link> for complete instructions on how to install the figure licenses.
         </li>
         <li>
           Download and install whichever Universal Clothing plugin you need.

@@ -3,13 +3,19 @@
 .cmsPage {
     @include globals.cmsPage;
     .download {
+        width: 100%;
         button {
             display: block;
             margin: auto;
+            height: auto;
+            padding: globals.$padding;
+            em {
+                font-size: small;
+            }
         }
     }
     .xdBlurb {
-        margin-top: globals.$padding-lg;
+        margin-bottom: globals.$padding-lg;
         border: solid 1px globals.$brand-border;
         border-radius: globals.$border-radius;
         padding: globals.$padding;

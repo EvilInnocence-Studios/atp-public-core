@@ -22,7 +22,7 @@ export const XDPoseFixComponent = ({}: XDPoseFixProps) => (
             </ul>
             <h2>Falloff Zones:</h2>
             <a id="falloff"></a>
-            <p>Sometimes, when you convert a clothing with the CrossDresser, it will conform to the target figure nicely, until you try to pose the figure. Then, you may get some areas of the clothing which "break" such as in the picture below. This occurs most often on the forearms of clothing.</p>
+            <p>Sometimes, when you convert a clothing with XD, it will conform to the target figure nicely, until you try to pose the figure. Then, you may get some areas of the clothing which "break" such as in the picture below. This occurs most often on the forearms of clothing.</p>
             <img src={badFalloffImg} alt="Bad Falloff Example" />
             <p>This kind of issue means that the falloff zones for the joints are not quite right for that particular clothing. It's very tricky to make general cr2 files that will work for the majority of clothing, so there will always be some clothing that will need falloff zone fixes. Fixing this usually doesn't require more than a slight tweaking of the falloff zones.</p>
             <p>You can edit the falloff zones for a joint by opening the <strong>Joint Editor</strong> window, which is under the Windows menu in Poser.</p>
@@ -33,7 +33,7 @@ export const XDPoseFixComponent = ({}: XDPoseFixProps) => (
             <img src={goodFalloffImg} alt="Good Falloff Example" />
             <h2>Regrouping</h2>
             <a id="regroup"></a>
-            <p>If a converted clothing breaks like it's been cut with a scissors when you try to pose it, then the likely cause of this is that the clothing was regrouped badly by the CrossDresser. The CrossDresser tries to make the groupings as accurate as possible, but this can fail for some clothings and/or figures. Apollo is particularily vulnerable to this problem in the armpit area, since his arms are so close to his body.</p>
+            <p>If a converted clothing breaks like it's been cut with a scissors when you try to pose it, then the likely cause of this is that the clothing was regrouped badly by XD. XD tries to make the groupings as accurate as possible, but this can fail for some clothings and/or figures. Apollo is particularily vulnerable to this problem in the armpit area, since his arms are so close to his body.</p>
             <img src={regroupInitialImg} alt="Initial Regrouping Example" />
             <p>To fix this, first go to the Setup room in Poser and click on the Grouping tool in the Editing Tools palette.</p>
             <img src={regroupPaletteImg} alt="Regrouping Palette" />

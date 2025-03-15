@@ -7,7 +7,7 @@ export const ContentLicenseComponent = ({}:ContentLicenseProps) =>
         <h1>Content Licensing Information</h1>
 
         <h2>About this License</h2>
-        <p>This license covers all content items purchased or downloaded from our website. Content includes items such as clothing, figures, poses, hairs, and textures. Content does not include items such as utilties or CrossDresser licenses. Those are covered by our <Link to="/software-license">Software License.</Link></p>
+        <p>This license covers all content items purchased or downloaded from our website. Content includes items such as clothing, figures, poses, hairs, and textures. Content does not include items such as utilties or XD licenses. Those are covered by our <Link to="/software-license">Software License.</Link></p>
 
         <p>In simple terms, the license says that you can use our content to make images or animations, both commercial and non-commercial, but you cannot otherwise redistribute our content in any other format. We also retain all rights to our content, and are only granting you the right to use it.</p>
 
