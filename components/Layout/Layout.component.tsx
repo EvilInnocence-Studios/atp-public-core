@@ -6,8 +6,10 @@ import { Header } from "../Header";
 import { LayoutProps } from "./Layout.d";
 import styles from './Layout.module.scss';
 import { NotFoundPage } from "@core/components/NotFoundPage";
+import { LoginForm } from "@uac/components/LoginForm";
+import { LoginModal } from "@uac/components/LoginModal";
 
-export const LayoutComponent = ({}:LayoutProps) =>
+export const LayoutComponent = ({loginModal}:LayoutProps) =>
     <Layout>
         <Layout.Header>
             {/* This is a hidden input field to stop the browser from autofilling the search field in the header*/}
@@ -15,6 +17,7 @@ export const LayoutComponent = ({}:LayoutProps) =>
                 <input />
                 <input type="password" />
             </div>
+            <LoginModal modal={loginModal} />
             <Header />
         </Layout.Header>
         <Layout.Content className={styles.content}>
