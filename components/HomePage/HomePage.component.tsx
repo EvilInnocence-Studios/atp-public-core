@@ -19,7 +19,7 @@ const groupBanners = (banners: IBanner[]):Index<IBanner[]> => banners.reduce(
     {}
 );
 
-const renderBanners = (lg:number) => (banners:IBanner[], order:string) => <Col lg={lg} sm={24} key={order} className={styles.hero}>
+const renderBanners = (lg:number) => (banners:IBanner[], order:string) => <Col lg={lg} xs={24} key={order} className={styles.hero}>
     <Fader interval={5}>
         {banners.map(banner => <Banner key={banner.id} banner={banner} />)}
     </Fader>
