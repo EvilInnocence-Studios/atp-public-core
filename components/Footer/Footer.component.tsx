@@ -9,7 +9,7 @@ export const FooterComponent = ({}:FooterProps) =>
     <Row gutter={16} className={styles.footer}>
         <Col xs={24} sm={6}>
             <div className={styles.socialLinksContainer}>
-                <SocialLinks multiline showSocialLinks/>
+                <SocialLinks />
             </div>
         </Col>
         <Col xs={24} sm={12}>
