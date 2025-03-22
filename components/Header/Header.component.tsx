@@ -2,13 +2,24 @@ import { onInputChange } from "@core/lib/onInputChange";
 import { CartBtn } from "@store/components/CartBtn";
 import { AccountMenu } from "@uac/components/AccountMenu";
 import { Input } from "antd";
-import { SocialLinks } from "../SocialLinks";
+import { Link } from "react-router";
 import { HeaderProps } from "./Header.d";
 import styles from './Header.module.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShop } from "@fortawesome/free-solid-svg-icons";
 
 export const HeaderComponent = ({query, setQuery, runSearch}:HeaderProps) =>
     <div className={styles.pageHeader}>
-        <SocialLinks showLogo showShopLink/>
+        <Link to="/" className={styles.homepageLink}>
+            <img src="/logo.png" />
+            <span>EvilInnocence</span>
+        </Link>
+        <span className={styles.shopLink}>
+            <Link to="/products">
+                <FontAwesomeIcon icon={faShop} />
+                <span>Shop</span>
+            </Link>
+        </span>
         <div className={styles.search}>
             <Input.Search
                 value={query}

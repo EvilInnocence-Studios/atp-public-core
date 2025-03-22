@@ -1,16 +1,11 @@
 @use "@styles/globals.module.scss";
 
 .socialLinks {
-    img {
-        position: absolute;
-        top: 8px;
-        left: 8px;
-        width: 48px;
-    }
     padding: 0 globals.$padding;
     padding-left: 56px;
     font-size: x-large;
     font-weight: bold;
+    * {color: globals.$brand-primary;}
     @media (max-width: 570px) {
     }
     > * {
@@ -21,14 +16,5 @@
     > span {
         width: 256px;
         padding: globals.$padding;
-    }
-    .shopLink {
-        display: inline-block;
-        padding: 0;
-        @include globals.splashButton;
-        margin-left: 32px;
-        a {
-            padding: globals.$padding-sm globals.$padding-lg;
-        }
     }
 }
