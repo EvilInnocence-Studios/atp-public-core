@@ -12,7 +12,7 @@ export const FooterComponent = ({}:FooterProps) =>
                 <SocialLinks />
             </div>
         </Col>
-        <Col xs={24} sm={12}>
+        <Col xs={24} sm={9} lg={12}>
             <ul>
                 <li><Link to="/products?tags=1048455126644686849&page=1">Brokered Products</Link></li>
                 <li><Link to="/products?page=1&tags=1046081212363571201">Original Figures</Link></li>
