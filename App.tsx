@@ -15,7 +15,7 @@ Spin.setDefaultIndicator(<div className={styles.spinnerContainer}>
 const App = () => {
   const clientId = useSetting("paypalClientId");
 
-  return <ConfigProvider theme={theme}>
+  return clientId ? <ConfigProvider theme={theme}>
     <PayPalScriptProvider options={{
       clientId,
       vault: true,
@@ -27,7 +27,7 @@ const App = () => {
         </div>
       </BrowserRouter>
     </PayPalScriptProvider>
-  </ConfigProvider>;
+  </ConfigProvider> : null;
 }
 
 export default App
