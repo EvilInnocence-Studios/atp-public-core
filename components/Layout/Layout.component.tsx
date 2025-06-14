@@ -1,5 +1,5 @@
 import { config } from "@config";
-import { NotFoundPage } from "@core/components/NotFoundPage";
+import { NotFoundPage } from "../NotFoundPage";
 import { LoginModal } from "@uac/components/LoginModal";
 import { Layout } from "antd";
 import { Route, Routes } from "react-router";
