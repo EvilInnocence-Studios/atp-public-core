@@ -27,6 +27,7 @@ import { CrossDresser } from "./components/CrossDresser";
 import { UniversalClothing } from "./components/UniversalClothing";
 import { XDConverter } from "./components/XDConverter";
 import { XDMorpher } from "./components/XDMorpher";
+import { BackstagePass } from "./components/BackstagePass";
 
 export const publicRoutes = {
     public: [
@@ -59,5 +60,6 @@ export const publicRoutes = {
         {path: "/universal-clothing",              component: UniversalClothing          },
         {path: "/crossdresser-converter",          component: XDConverter                },
         {path: "/xd-morpher",                      component: XDMorpher                  },
+        {path: "/backstage-pass",                  component: BackstagePass              },
     ]
 }
