@@ -3,7 +3,7 @@ import { faCrown, faDollarSign, faPlus } from "@fortawesome/free-solid-svg-icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IProductFull } from "@store-shared/product/types";
 import { BSPFaq } from "../BSPFaq";
-import { BSPSignupForm } from "@store/components/BSPSignupForm";
+import { SignUpForm } from "@subscription/components/SignUpForm";
 import { ProductScroller } from "@store/components/ProductScroller";
 import { BackstagePassProps } from "./BackstagePass.d";
 import styles from './BackstagePass.module.scss';
@@ -51,7 +51,7 @@ export const BackstagePassComponent = ({count   }:BackstagePassProps) =>
         </div>
 
         <a id="signup" />
-        <BSPSignupForm />
+        <SignUpForm />
 
         <ProductScroller
             title="Explore Backstage Pass Products"
