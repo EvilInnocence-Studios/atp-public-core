@@ -1,9 +1,10 @@
-import { Col, Row } from "antd";
-import {FooterProps} from "./Footer.d";
-import styles from './Footer.module.scss';
-import { Link } from "react-router";
-import Mailchimp from 'react-mailchimp-form';
+import { Setting } from "@common/components/Setting";
 import { SocialLinks } from "@common/components/SocialLinks";
+import { Col, Row } from "antd";
+import Mailchimp from 'react-mailchimp-form';
+import { Link } from "react-router";
+import { FooterProps } from "./Footer.d";
+import styles from './Footer.module.scss';
 
 export const FooterComponent = ({}:FooterProps) =>
     <Row gutter={16} className={styles.footer}>
@@ -47,6 +48,6 @@ export const FooterComponent = ({}:FooterProps) =>
             />
         </Col>
         <Col xs={24}>
-            <p>&copy; {new Date().getFullYear()} EvilInnocence, all rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} <Setting id="siteName" />, all rights reserved.</p>
         </Col>
     </Row>;

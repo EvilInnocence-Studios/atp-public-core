@@ -6,11 +6,12 @@ import { AccountMenu } from "@uac/components/AccountMenu";
 import { Link } from "react-router";
 import { HeaderProps } from "./Header.d";
 import styles from './Header.module.scss';
+import { Setting } from "@common/components/Setting";
 
-export const HeaderComponent = ({siteName}:HeaderProps) =>
+export const HeaderComponent = ({}:HeaderProps) =>
     <div className={styles.pageHeader}>
         <Link to="/" className={styles.homepageLink}>
-            <span>{siteName}</span>
+            <span><Setting id="siteName" /></span>
         </Link>
         <span className={styles.shopLink}>
             <Link to="/products">
