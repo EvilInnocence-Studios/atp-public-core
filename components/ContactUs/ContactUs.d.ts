@@ -1,5 +1,5 @@
 export declare interface IContactUsProps {
-
+    email: string;
 }
 
 // What gets passed into the component from the parent as attributes
