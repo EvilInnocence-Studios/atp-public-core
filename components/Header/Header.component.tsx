@@ -1,18 +1,16 @@
-import { onInputChange } from "@core/lib/onInputChange";
+import { faShop } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CartBtn } from "@store/components/CartBtn";
+import { ProductSearchInput } from "@store/components/ProductSearchInput";
 import { AccountMenu } from "@uac/components/AccountMenu";
-import { Input } from "antd";
 import { Link } from "react-router";
 import { HeaderProps } from "./Header.d";
 import styles from './Header.module.scss';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShop } from "@fortawesome/free-solid-svg-icons";
 
-export const HeaderComponent = ({query, setQuery, runSearch}:HeaderProps) =>
+export const HeaderComponent = ({}:HeaderProps) =>
     <div className={styles.pageHeader}>
         <Link to="/" className={styles.homepageLink}>
-            <img src="/logo.png" />
-            <span>EvilInnocence</span>
+            <span>Darkwynd Chronicles</span>
         </Link>
         <span className={styles.shopLink}>
             <Link to="/products">
@@ -21,12 +19,7 @@ export const HeaderComponent = ({query, setQuery, runSearch}:HeaderProps) =>
             </Link>
         </span>
         <div className={styles.search}>
-            <Input.Search
-                value={query}
-                placeholder="Search products"
-                onChange={onInputChange(setQuery)}
-                onSearch={runSearch}
-            />
+            <ProductSearchInput />
         </div>
         <div className={styles.account}>
             <AccountMenu />
