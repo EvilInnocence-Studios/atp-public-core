@@ -7,10 +7,10 @@ import { Link } from "react-router";
 import { HeaderProps } from "./Header.d";
 import styles from './Header.module.scss';
 
-export const HeaderComponent = ({}:HeaderProps) =>
+export const HeaderComponent = ({siteName}:HeaderProps) =>
     <div className={styles.pageHeader}>
         <Link to="/" className={styles.homepageLink}>
-            <span>Darkwynd Chronicles</span>
+            <span>{siteName}</span>
         </Link>
         <span className={styles.shopLink}>
             <Link to="/products">
