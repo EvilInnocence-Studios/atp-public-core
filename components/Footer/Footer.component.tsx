@@ -2,8 +2,8 @@ import { Col, Row } from "antd";
 import {FooterProps} from "./Footer.d";
 import styles from './Footer.module.scss';
 import { Link } from "react-router";
-import { SocialLinks } from "../SocialLinks";
 import Mailchimp from 'react-mailchimp-form';
+import { SocialLinks } from "@common/components/SocialLinks";
 
 export const FooterComponent = ({}:FooterProps) =>
     <Row gutter={16} className={styles.footer}>
