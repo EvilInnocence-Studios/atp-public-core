@@ -1,6 +1,6 @@
+import { Copyright } from "@common/components/Copyright";
 import { LinkList } from "@common/components/LinkList";
 import { MailchimpForm } from "@common/components/MailchimpForm";
-import { Setting } from "@common/components/Setting";
 import { SocialLinks } from "@common/components/SocialLinks";
 import { Col, Row } from "antd";
 import { FooterProps } from "./Footer.d";
@@ -20,6 +20,6 @@ export const FooterComponent = ({}:FooterProps) =>
             <MailchimpForm />
         </Col>
         <Col xs={24}>
-            <p>&copy; {new Date().getFullYear()} <Setting id="siteName" />, all rights reserved.</p>
+            <Copyright />
         </Col>
     </Row>;
