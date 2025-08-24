@@ -1,3 +1,4 @@
+import { Setting } from "@common/components/Setting";
 import { useSetting } from "@common/lib/setting/services";
 import { ScrollToTop } from "@core/components/ScrollToTop";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
@@ -20,6 +21,7 @@ const App = () => {
       clientId,
       vault: true,
     }}>
+      <title><Setting id="siteName" /></title>
       <BrowserRouter>
         <div className={styles.app}>
           <Layout />
