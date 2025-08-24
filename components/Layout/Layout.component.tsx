@@ -1,8 +1,6 @@
-import { config } from "@config";
-import { NotFoundPage } from "../NotFoundPage";
+import { Content } from "@core/components/Content";
 import { LoginModal } from "@uac/components/LoginModal";
 import { Layout } from "antd";
-import { Route, Routes } from "react-router";
 import { Footer } from "../Footer";
 import { Header } from "../Header";
 import { LayoutProps } from "./Layout.d";
@@ -20,12 +18,7 @@ export const LayoutComponent = ({loginModal}:LayoutProps) =>
             <Header />
         </Layout.Header>
         <Layout.Content className={styles.content}>
-            <Routes>
-                {config().routes.map((route, index) => (
-                    <Route key={index} path={route.path} Component={route.component} />
-                ))}
-                <Route path="*" Component={NotFoundPage} />
-            </Routes>
+            <Content />
         </Layout.Content>
         <Layout.Footer>
             <Footer />
