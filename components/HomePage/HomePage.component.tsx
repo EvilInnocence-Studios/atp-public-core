@@ -1,4 +1,4 @@
-import { sitePlugins } from "@public/index";
+import { sitePlugins } from "@common/index";
 import { Row } from "antd";
 import { HomePageProps } from "./HomePage.d";
 import styles from './HomePage.module.scss';
