@@ -1,7 +1,7 @@
 @use "@styles/globals.module.scss";
 
 .footer {
-    border-top: 1px solid globals.$brand-border;
+    border-top: 1px solid var(--borderColor);
     display: flex;
     justify-content: space-between;
     .socialLinksContainer {
@@ -32,9 +32,9 @@
             white-space: nowrap;
             a {
                 text-decoration: none;
-                color: globals.$brand-primary;
+                color: var(--primaryColor);
                 &:hover {
-                    color: globals.$brand-secondary;
+                    color: var(--secondaryColor);
                 }
             }
         }
@@ -48,7 +48,7 @@
         input {
             width: 100%;
             padding: globals.$padding-sm;
-            border: 2px solid globals.$brand-border;
+            border: 2px solid var(--borderColor);
             border-radius: 4px;
             font-size: 16px;
             margin-bottom: globals.$padding-sm;

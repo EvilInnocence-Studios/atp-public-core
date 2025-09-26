@@ -31,26 +31,26 @@ body {
 @keyframes pulseDropShadow {
     0% {
         filter:
-            drop-shadow( $spinner-shadow-offset  $spinner-shadow-offset $spinner-shadow-size globals.$brand-primary)
-            drop-shadow( $spinner-shadow-offset $spinner-shadow-offset1 $spinner-shadow-size globals.$brand-primary)
-            drop-shadow($spinner-shadow-offset1  $spinner-shadow-offset $spinner-shadow-size globals.$brand-primary)
-            drop-shadow($spinner-shadow-offset1 $spinner-shadow-offset1 $spinner-shadow-size globals.$brand-primary)
+            drop-shadow( $spinner-shadow-offset  $spinner-shadow-offset $spinner-shadow-size var(--primaryColor))
+            drop-shadow( $spinner-shadow-offset $spinner-shadow-offset1 $spinner-shadow-size var(--primaryColor))
+            drop-shadow($spinner-shadow-offset1  $spinner-shadow-offset $spinner-shadow-size var(--primaryColor))
+            drop-shadow($spinner-shadow-offset1 $spinner-shadow-offset1 $spinner-shadow-size var(--primaryColor))
         ;
     }
     50% {
         filter:
-            drop-shadow( $spinner-shadow-offset  $spinner-shadow-offset $spinner-shadow-size-small globals.$brand-primary)
-            drop-shadow( $spinner-shadow-offset $spinner-shadow-offset1 $spinner-shadow-size-small globals.$brand-primary)
-            drop-shadow($spinner-shadow-offset1  $spinner-shadow-offset $spinner-shadow-size-small globals.$brand-primary)
-            drop-shadow($spinner-shadow-offset1 $spinner-shadow-offset1 $spinner-shadow-size-small globals.$brand-primary)
+            drop-shadow( $spinner-shadow-offset  $spinner-shadow-offset $spinner-shadow-size-small var(--primaryColor))
+            drop-shadow( $spinner-shadow-offset $spinner-shadow-offset1 $spinner-shadow-size-small var(--primaryColor))
+            drop-shadow($spinner-shadow-offset1  $spinner-shadow-offset $spinner-shadow-size-small var(--primaryColor))
+            drop-shadow($spinner-shadow-offset1 $spinner-shadow-offset1 $spinner-shadow-size-small var(--primaryColor))
         ;
     }
     100% {
         filter:
-            drop-shadow( $spinner-shadow-offset  $spinner-shadow-offset $spinner-shadow-size globals.$brand-primary)
-            drop-shadow( $spinner-shadow-offset $spinner-shadow-offset1 $spinner-shadow-size globals.$brand-primary)
-            drop-shadow($spinner-shadow-offset1  $spinner-shadow-offset $spinner-shadow-size globals.$brand-primary)
-            drop-shadow($spinner-shadow-offset1 $spinner-shadow-offset1 $spinner-shadow-size globals.$brand-primary)
+            drop-shadow( $spinner-shadow-offset  $spinner-shadow-offset $spinner-shadow-size var(--primaryColor))
+            drop-shadow( $spinner-shadow-offset $spinner-shadow-offset1 $spinner-shadow-size var(--primaryColor))
+            drop-shadow($spinner-shadow-offset1  $spinner-shadow-offset $spinner-shadow-size var(--primaryColor))
+            drop-shadow($spinner-shadow-offset1 $spinner-shadow-offset1 $spinner-shadow-size var(--primaryColor))
         ;
     }    
 }
@@ -63,7 +63,7 @@ body {
         width: 100%;
         height: 100%;
         animation: spinning 0.75s linear infinite;
-        border: solid $spinner-border-size globals.$brand-primary;
+        border: solid $spinner-border-size var(--primaryColor);
         border-right: none;
         border-bottom: none;
         border-radius: 50%;
