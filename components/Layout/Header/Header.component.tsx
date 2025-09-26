@@ -1,3 +1,6 @@
+import { Banner } from "@common/components/Banner";
+import { LinkList } from "@common/components/LinkList";
+import { Setting } from "@common/components/Setting";
 import { faShop } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CartBtn } from "@store/components/CartBtn";
@@ -6,26 +9,30 @@ import { AccountMenu } from "@uac/components/AccountMenu";
 import { Link } from "react-router";
 import { HeaderProps } from "./Header.d";
 import styles from './Header.module.scss';
-import { Setting } from "@common/components/Setting";
 
-export const HeaderComponent = ({}:HeaderProps) =>
+export const HeaderComponent = ({showBrandLink, showShopLink, showProductSearch, showTopMenu, banner}:HeaderProps) => <>
+    {banner && <div className={styles.banner}>
+        <Banner banner={banner} />
+    </div>}
+    {showTopMenu && <LinkList id="top" className={styles.topMenu} />}
     <div className={styles.pageHeader}>
         <Link to="/" className={styles.homepageLink}>
-            <span><Setting id="siteName" /></span>
+            {showBrandLink && <span><Setting id="siteName" /></span>}
         </Link>
-        <span className={styles.shopLink}>
+        {showShopLink && <span className={styles.shopLink}>
             <Link to="/products">
                 <FontAwesomeIcon icon={faShop} />
                 <span>Shop</span>
             </Link>
-        </span>
-        <div className={styles.search}>
+        </span>}
+        {showProductSearch && <div className={styles.search}>
             <ProductSearchInput />
-        </div>
+        </div>}
         <div className={styles.account}>
             <AccountMenu />
         </div>
         <div className={styles.cart}>
             <CartBtn />
         </div>
-    </div>;
+    </div>
+</>;

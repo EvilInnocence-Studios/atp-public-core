@@ -1,8 +1,32 @@
 @use "@styles/globals.module.scss";
 
+.topMenu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    > * {
+        flex-grow: 1;
+        text-align: center;
+        font-size: globals.$text-lg;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
 .pageHeader {
     display: flex;
     flex-wrap: nowrap;
+    position: relative;
+    @media (max-width: 700px) {
+        display: block;
+        text-align: right;
+        width: 100%;
+        .account, .cart {
+            display: inline-block;
+        }
+    }
     img {
         position: absolute;
         top: 8px;

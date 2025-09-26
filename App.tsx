@@ -2,11 +2,11 @@ import { Setting } from "@common/components/Setting";
 import { useSetting } from "@common/lib/setting/services";
 import { ScrollToTop } from "@core/components/ScrollToTop";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
-import { theme } from "@styles/theme";
 import { ConfigProvider, Spin } from "antd";
 import { BrowserRouter } from "react-router-dom";
 import styles from "./App.module.scss";
 import { Layout } from "./components/Layout";
+import { useTheme } from "@common/lib/useTheme";
 
 Spin.setDefaultIndicator(<div className={styles.spinnerContainer}>
   <div className={styles.spinner}>&nbsp;</div>
@@ -15,7 +15,8 @@ Spin.setDefaultIndicator(<div className={styles.spinnerContainer}>
 
 const App = () => {
   const clientId = useSetting("paypalClientId");
-
+  const theme = useTheme();
+console.log(theme);
   return clientId ? <ConfigProvider theme={theme}>
     <PayPalScriptProvider options={{
       clientId,

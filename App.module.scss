@@ -8,9 +8,14 @@ $spinner-shadow-offset: 0px;
 $spinner-shadow-offset1: -0px;
 $image-scale: 0.5;
 
+body {
+    background-color: var(--bgColor);
+}
+
 .app {
-    background-color: globals.$brand-bg;
-    width: 100%;
+    background-color: var(--bgColor);
+    width: var(--maxSiteWidth);
+    margin: auto;
     min-height: 100vh;
 }
 
