@@ -22,7 +22,6 @@ const injectHeaderProps = createInjector(({}:IHeaderInputProps):IHeaderProps => 
         }
     }, [bannerId])
 
-    console.log(banner);
     return {showBrandLink, showShopLink, showProductSearch, showTopMenu, banner};
 });
 

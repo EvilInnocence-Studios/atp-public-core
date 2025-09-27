@@ -16,7 +16,7 @@ Spin.setDefaultIndicator(<div className={styles.spinnerContainer}>
 const App = () => {
   const clientId = useSetting("paypalClientId");
   const theme = useTheme();
-console.log(theme);
+
   return clientId ? <ConfigProvider theme={theme}>
     <PayPalScriptProvider options={{
       clientId,
