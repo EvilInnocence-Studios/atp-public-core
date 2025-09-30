@@ -10,12 +10,12 @@ import { Link } from "react-router";
 import { HeaderProps } from "./Header.d";
 import styles from './Header.module.scss';
 
-export const HeaderComponent = ({showBrandLink, showShopLink, showProductSearch, showTopMenu, banner}:HeaderProps) => <>
+export const HeaderComponent = ({showBrandLink, showShopLink, showStoreMenu, showTopMenu, banner}:HeaderProps) => <div className={styles.header}>
     {banner && <div className={styles.banner}>
-        <Banner banner={banner} />
+        <Banner className={styles.headerBanner} banner={banner} />
     </div>}
     {showTopMenu && <LinkList id="top" className={styles.topMenu} />}
-    <div className={styles.pageHeader}>
+    {showStoreMenu && <div className={styles.pageHeader}>
         <Link to="/" className={styles.homepageLink}>
             {showBrandLink && <span><Setting id="siteName" /></span>}
         </Link>
@@ -25,14 +25,14 @@ export const HeaderComponent = ({showBrandLink, showShopLink, showProductSearch,
                 <span>Shop</span>
             </Link>
         </span>}
-        {showProductSearch && <div className={styles.search}>
+        <div className={styles.search}>
             <ProductSearchInput />
-        </div>}
+        </div>
         <div className={styles.account}>
             <AccountMenu />
         </div>
         <div className={styles.cart}>
             <CartBtn />
         </div>
-    </div>
-</>;
+    </div>}
+</div>;

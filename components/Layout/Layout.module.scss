@@ -5,7 +5,12 @@
 }
 
 .content {
+    background-color: var(--contentBg) !important;
     @media (max-width: 700px) {
         margin-top: 32px;
     }
+}
+
+.footer {
+    padding: var(--padding) 0;
 }

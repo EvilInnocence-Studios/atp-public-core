@@ -20,7 +20,7 @@ export const LayoutComponent = ({loginModal}:LayoutProps) =>
         <Layout.Content className={styles.content}>
             <Content />
         </Layout.Content>
-        <Layout.Footer>
+        <Layout.Footer className={styles.footer}>
             <Footer />
         </Layout.Footer>
     </Layout>;

@@ -3,6 +3,7 @@
 .footer {
     border-top: 1px solid var(--borderColor);
     display: flex;
+    padding: 0 var(--padding) !important;
     justify-content: space-between;
     .socialLinksContainer {
         margin-top: 22px;

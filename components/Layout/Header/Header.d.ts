@@ -4,7 +4,7 @@ import { Setter } from "unstateless";
 export declare interface IHeaderProps {
     showBrandLink: boolean;
     showShopLink: boolean;
-    showProductSearch: boolean;
+    showStoreMenu: boolean;
     showTopMenu: boolean;
     banner: IBanner | null;
 }
