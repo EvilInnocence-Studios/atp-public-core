@@ -10,6 +10,12 @@ $image-scale: 0.5;
 
 body {
     background-color: var(--pageBg);
+    * {
+        font-family: var(--defaultFont);
+    }
+    h1, h2, h3, h4 {
+        font-family: var(--headerFont);
+    }
 }
 
 .app {
@@ -17,6 +23,17 @@ body {
     width: var(--maxSiteWidth);
     margin: auto;
     min-height: 100vh;
+}
+
+a {
+    color: var(--linkColor);
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+    &.altLink {
+        color: var(--altLinkColor);
+    }
 }
 
 @keyframes spinning {

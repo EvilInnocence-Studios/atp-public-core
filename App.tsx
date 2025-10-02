@@ -1,23 +1,27 @@
+import { LogoImage } from "@common/components/LogoImage";
 import { Setting } from "@common/components/Setting";
 import { useSetting } from "@common/lib/setting/services";
+import { useTheme } from "@common/lib/useTheme";
 import { ScrollToTop } from "@core/components/ScrollToTop";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import { ConfigProvider, Spin } from "antd";
 import { BrowserRouter } from "react-router-dom";
 import styles from "./App.module.scss";
 import { Layout } from "./components/Layout";
-import { useTheme } from "@common/lib/useTheme";
+import Favicon from 'react-favicon';
 
 Spin.setDefaultIndicator(<div className={styles.spinnerContainer}>
   <div className={styles.spinner}>&nbsp;</div>
-  <img src="/logo.png" />
+  <LogoImage />
 </div>);
 
 const App = () => {
   const clientId = useSetting("paypalClientId");
+  const logoUrl = useSetting("siteLogoUrl");
   const theme = useTheme();
 
   return clientId ? <ConfigProvider theme={theme}>
+    {!!logoUrl && <Favicon url={logoUrl || undefined} />}
     <PayPalScriptProvider options={{
       clientId,
       vault: true,

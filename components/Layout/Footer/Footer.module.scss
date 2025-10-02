@@ -5,6 +5,9 @@
     display: flex;
     padding: 0 var(--padding) !important;
     justify-content: space-between;
+    a {
+        color: var(--altLinkColor) !important;
+    }
     .socialLinksContainer {
         margin-top: 22px;
         text-align: right;
