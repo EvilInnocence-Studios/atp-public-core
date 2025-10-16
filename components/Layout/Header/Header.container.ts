@@ -14,7 +14,7 @@ const injectHeaderProps = createInjector(({}:IHeaderInputProps):IHeaderProps => 
 
     // Only show the store menu on store-related routes
     const route = useLocation().pathname;
-    const isStoreRoute = route.startsWith("/products") || route.startsWith("/cart");
+    const isStoreRoute = route.startsWith("/products") || route.startsWith("/cart") || route.startsWith("/my-account");
     const showStoreMenu = useSetting("layout.header.showStoreMenu") === "true" && isStoreRoute;
 
     const bannerId          = useSetting("layout.header.topBanner");
