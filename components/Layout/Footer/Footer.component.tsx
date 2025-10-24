@@ -20,6 +20,6 @@ export const FooterComponent = ({}:FooterProps) =>
             <MailchimpForm />
         </Col>
         <Col xs={24}>
-            <Copyright />
+            <p><Copyright /></p>
         </Col>
     </Row>;
