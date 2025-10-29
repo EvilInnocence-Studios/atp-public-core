@@ -21,6 +21,12 @@
         }
         a {
             color: var(--altLinkColor);
+            @media (max-width:450px) {
+                font-size: small;
+            }
+            @media (max-width: 250px) {
+                font-size: x-small;
+            }
         }
     }
 
