@@ -1,3 +1,4 @@
+import { overridable } from "@core/lib/overridable";
 import { createInjector, inject, mergeProps } from "unstateless";
 import { HomePageComponent } from "./HomePage.component";
 import { HomePageProps, IHomePageInputProps, IHomePageProps } from "./HomePage.d";
@@ -10,4 +11,4 @@ const connect = inject<IHomePageInputProps, HomePageProps>(mergeProps(
     injectHomePageProps,
 ));
 
-export const HomePage = connect(HomePageComponent);
+export const HomePage = overridable<IHomePageInputProps>(connect(HomePageComponent));

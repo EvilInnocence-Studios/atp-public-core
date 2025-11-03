@@ -1,4 +1,5 @@
 import { useSetting } from "@common/lib/setting/services";
+import { overridable } from "@core/lib/overridable";
 import usePageTracking from "@core/lib/usePageTracking";
 import { useScript } from "@core/lib/useScript";
 import { useLoginForm } from "@uac/lib/useLoginForm";
@@ -20,4 +21,4 @@ const connect = inject<ILayoutInputProps, LayoutProps>(mergeProps(
     injectLayoutProps,
 ));
 
-export const Layout = connect(LayoutComponent);
+export const Layout = overridable<ILayoutInputProps>(connect(LayoutComponent));

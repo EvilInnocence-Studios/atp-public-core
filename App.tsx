@@ -9,6 +9,7 @@ import Favicon from 'react-favicon';
 import { BrowserRouter } from "react-router-dom";
 import styles from "./App.module.scss";
 import { Layout } from "./components/Layout";
+// import { Fire } from "@darkwynd/components/Fire";
 
 Spin.setDefaultIndicator(<div className={styles.spinnerContainer}>
   <div className={styles.spinner}>&nbsp;</div>

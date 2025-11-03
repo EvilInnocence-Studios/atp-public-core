@@ -1,6 +1,7 @@
 import { IBanner } from "@common-shared/banner/types";
 import { useSetting } from "@common/lib/setting/services";
 import { services } from "@core/lib/api";
+import { overridable } from "@core/lib/overridable";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import { createInjector, inject, mergeProps } from "unstateless";
@@ -35,4 +36,4 @@ const connect = inject<IHeaderInputProps, HeaderProps>(mergeProps(
     injectHeaderProps,
 ));
 
-export const Header = connect(HeaderComponent);
+export const Header = overridable<IHeaderInputProps>(connect(HeaderComponent));
