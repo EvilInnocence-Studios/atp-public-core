@@ -1,4 +1,3 @@
-import { Banner } from "@common/components/Banner";
 import { LinkList } from "@common/components/LinkList";
 import { Setting } from "@common/components/Setting";
 import { faShop } from "@fortawesome/free-solid-svg-icons";
@@ -9,11 +8,10 @@ import { AccountMenu } from "@uac/components/AccountMenu";
 import { Link } from "react-router";
 import { HeaderProps } from "./Header.d";
 import styles from './Header.module.scss';
+import { HeaderBanner } from "./HeaderBanner";
 
-export const HeaderComponent = ({showBrandLink, showShopLink, showStoreMenu, showTopMenu, banner}:HeaderProps) => <div className={styles.header}>
-    {banner && <div className={styles.banner}>
-        <Banner className={styles.headerBanner} banner={banner} />
-    </div>}
+export const HeaderComponent = ({showBrandLink, showShopLink, showStoreMenu, showTopMenu }:HeaderProps) => <div className={styles.header}>
+    <HeaderBanner />
     {showTopMenu && <LinkList id="top" className={styles.topMenu} />}
     {showStoreMenu && <div className={styles.pageHeader}>
         <Link to="/" className={styles.homepageLink}>

@@ -1,8 +1,5 @@
-import { IBanner } from "@common-shared/banner/types";
 import { useSetting } from "@common/lib/setting/services";
-import { services } from "@core/lib/api";
 import { overridable } from "@core/lib/overridable";
-import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import { createInjector, inject, mergeProps } from "unstateless";
 import { HeaderComponent } from "./Header.component";
@@ -18,18 +15,7 @@ const injectHeaderProps = createInjector(({}:IHeaderInputProps):IHeaderProps => 
     const isStoreRoute = route.startsWith("/products") || route.startsWith("/cart") || route.startsWith("/my-account");
     const showStoreMenu = useSetting("layout.header.showStoreMenu") === "true" && isStoreRoute;
 
-    const bannerId          = useSetting("layout.header.topBanner");
-    const [banner, setBanner] = useState<IBanner | null>(null);
-
-    useEffect(() => {
-        if(bannerId) {
-            services().banner.get(bannerId).then(setBanner).catch(() => setBanner(null));
-        } else {
-            setBanner(null);
-        }
-    }, [bannerId])
-
-    return {showBrandLink, showShopLink, showStoreMenu, showTopMenu, banner};
+    return {showBrandLink, showShopLink, showStoreMenu, showTopMenu};
 });
 
 const connect = inject<IHeaderInputProps, HeaderProps>(mergeProps(

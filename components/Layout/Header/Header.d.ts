@@ -6,7 +6,6 @@ export declare interface IHeaderProps {
     showShopLink: boolean;
     showStoreMenu: boolean;
     showTopMenu: boolean;
-    banner: IBanner | null;
 }
 
 // What gets passed into the component from the parent as attributes
