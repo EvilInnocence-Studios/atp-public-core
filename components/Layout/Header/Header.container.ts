@@ -6,16 +6,18 @@ import { HeaderComponent } from "./Header.component";
 import { HeaderProps, IHeaderInputProps, IHeaderProps } from "./Header.d";
 
 const injectHeaderProps = createInjector(({}:IHeaderInputProps):IHeaderProps => {
+    const showTopMenu   = useSetting("layout.header.showTopMenu"  ) === "true";
     const showBrandLink = useSetting("layout.header.showBrandLink") === "true";
     const showShopLink  = useSetting("layout.header.showShopLink" ) === "true";
-    const showTopMenu   = useSetting("layout.header.showTopMenu"  ) === "true";
+
+    const showFirstColumn = showBrandLink || showShopLink;
 
     // Only show the store menu on store-related routes
     const route = useLocation().pathname;
     const isStoreRoute = route.startsWith("/products") || route.startsWith("/cart") || route.startsWith("/my-account");
     const showStoreMenu = useSetting("layout.header.showStoreMenu") === "true" && isStoreRoute;
 
-    return {showBrandLink, showShopLink, showStoreMenu, showTopMenu};
+    return {showStoreMenu, showTopMenu, showFirstColumn};
 });
 
 const connect = inject<IHeaderInputProps, HeaderProps>(mergeProps(
