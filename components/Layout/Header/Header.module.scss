@@ -29,6 +29,9 @@
     }
 
     .pageHeader {
+        background-color: var(--bgColor);
+        box-shadow: 0 0 20px var(--primaryColor);
+        margin-bottom: 20px;
         .links {
             padding: var(--padding);
         }
