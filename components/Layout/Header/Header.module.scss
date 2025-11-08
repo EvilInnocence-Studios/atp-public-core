@@ -43,6 +43,9 @@
             > * {
                 display: inline-block;
             }
+            :global(.loginBtn) {
+                margin: var(--padding);
+            }
             :global(.cartBtn) {
                 vertical-align: top;
                 padding-top: 12px;
