@@ -4,6 +4,9 @@
     display: flex;
     padding: 0 var(--padding) !important;
     justify-content: space-between;
+    :global(.socialLinks) {
+        > a {display: block;}
+    }
     a {
         color: var(--altLinkColor) !important;
     }
@@ -23,6 +26,16 @@
             columns: 2;
         }
         @media (max-width: 790px) {
+            columns: 1;
+            width: auto;
+        }
+        @media (max-width: 575px) {
+            columns: 3;
+        }
+        @media (max-width: 475px) {
+            columns: 2;
+        }
+        @media (max-width: 300px) {
             columns: 1;
             width: auto;
         }
