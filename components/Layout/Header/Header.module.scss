@@ -5,10 +5,8 @@
         display: flex;
         list-style-type: none;
         margin: 0;
-        padding: var(--padding) 0;
+        padding: 28px 0 var(--padding) 0;
         width: 100%;
-        border-top: solid var(--paddingSmall) var(--bgLightColor);
-        border-bottom: solid var(--paddingSmall) var(--bgLightColor);
         background-color: var(--headerMenuBg);
         > * {
             flex-grow: 1;

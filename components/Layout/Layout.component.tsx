@@ -7,7 +7,7 @@ import { LayoutProps } from "./Layout.d";
 import styles from './Layout.module.scss';
 
 export const LayoutComponent = ({loginModal}:LayoutProps) =>
-    <Layout>
+    <Layout className={styles.layout}>
         <LoginModal modal={loginModal} />
         <div className={styles.header}>
             {/* This is a hidden input field to stop the browser from autofilling the search field in the header*/}
