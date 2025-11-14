@@ -9,6 +9,9 @@ $spinner-shadow-offset1: -0px;
 $image-scale: 0.5;
 
 body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
     background-color: var(--pageBg);
     * {
         font-family: var(--defaultFont);
