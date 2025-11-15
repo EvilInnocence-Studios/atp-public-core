@@ -23,5 +23,6 @@ const injectHeaderProps = createInjector(({}:IHeaderInputProps):IHeaderProps => 
 const connect = inject<IHeaderInputProps, HeaderProps>(mergeProps(
     injectHeaderProps,
 ));
+export const connectHeader = connect;
 
 export const Header = overridable<IHeaderInputProps>(connect(HeaderComponent));

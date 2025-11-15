@@ -13,6 +13,6 @@ const injectBrandLinkProps = createInjector(({}:IBrandLinkInputProps):IBrandLink
 const connect = inject<IBrandLinkInputProps, BrandLinkProps>(mergeProps(
     injectBrandLinkProps,
 ));
+export const connectBrandLink = connect;
 
 export const BrandLink = overridable<IBrandLinkInputProps>(connect(BrandLinkComponent));
-export const connectBrandLink = connect;

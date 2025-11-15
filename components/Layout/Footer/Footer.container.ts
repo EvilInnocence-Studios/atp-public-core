@@ -10,5 +10,6 @@ const injectFooterProps = createInjector(({}:IFooterInputProps):IFooterProps => 
 const connect = inject<IFooterInputProps, FooterProps>(mergeProps(
     injectFooterProps,
 ));
+export const connectFooter = connect;
 
 export const Footer = overridable<IFooterInputProps>(connect(FooterComponent));

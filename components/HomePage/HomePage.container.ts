@@ -10,5 +10,6 @@ const injectHomePageProps = createInjector(({}:IHomePageInputProps):IHomePagePro
 const connect = inject<IHomePageInputProps, HomePageProps>(mergeProps(
     injectHomePageProps,
 ));
+export const connectHomePage = connect;
 
 export const HomePage = overridable<IHomePageInputProps>(connect(HomePageComponent));

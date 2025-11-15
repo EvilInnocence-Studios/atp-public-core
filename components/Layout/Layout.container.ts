@@ -20,5 +20,6 @@ const injectLayoutProps = createInjector(({}:ILayoutInputProps):ILayoutProps => 
 const connect = inject<ILayoutInputProps, LayoutProps>(mergeProps(
     injectLayoutProps,
 ));
+export const connectLayout = connect;
 
 export const Layout = overridable<ILayoutInputProps>(connect(LayoutComponent));
