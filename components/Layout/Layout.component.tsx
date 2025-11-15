@@ -5,8 +5,9 @@ import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { LayoutProps } from "./Layout.d";
 import styles from './Layout.module.scss';
+import { overridable } from "@core/lib/overridable";
 
-export const LayoutComponent = ({loginModal}:LayoutProps) =>
+export const LayoutComponent = overridable(({loginModal}:LayoutProps) =>
     <Layout className={styles.layout}>
         <LoginModal modal={loginModal} />
         <div className={styles.header}>
@@ -23,4 +24,5 @@ export const LayoutComponent = ({loginModal}:LayoutProps) =>
         <Layout.Footer className={styles.footer}>
             <Footer />
         </Layout.Footer>
-    </Layout>;
+    </Layout>
+);

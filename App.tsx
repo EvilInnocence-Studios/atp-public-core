@@ -9,6 +9,7 @@ import Favicon from 'react-favicon';
 import { BrowserRouter } from "react-router-dom";
 import styles from "./App.module.scss";
 import { Layout } from "./components/Layout";
+import { overridable } from "@core/lib/overridable";
 // import { Fire } from "@darkwynd/components/Fire";
 
 Spin.setDefaultIndicator(<div className={styles.spinnerContainer}>
@@ -16,7 +17,7 @@ Spin.setDefaultIndicator(<div className={styles.spinnerContainer}>
   <LogoImage />
 </div>);
 
-const App = () => {
+const App = overridable(() => {
   const clientId = useSetting("paypalClientId");
   const logoUrl = useSetting("siteLogoUrl");
   const theme = useTheme();
@@ -36,6 +37,6 @@ const App = () => {
       </BrowserRouter>
     </PayPalScriptProvider>
   </ConfigProvider> : null;
-}
+});
 
 export default App

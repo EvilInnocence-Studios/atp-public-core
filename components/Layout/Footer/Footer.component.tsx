@@ -5,8 +5,9 @@ import { SocialLinks } from "@common/components/SocialLinks";
 import { Col, Row } from "antd";
 import { FooterProps } from "./Footer.d";
 import styles from './Footer.module.scss';
+import { overridable } from "@core/lib/overridable";
 
-export const FooterComponent = ({}:FooterProps) =>
+export const FooterComponent = overridable(({}:FooterProps) =>
     <Row gutter={16} className={styles.footer}>
         <Col xs={24} sm={6}>
             <div className={styles.socialLinksContainer}>
@@ -22,4 +23,5 @@ export const FooterComponent = ({}:FooterProps) =>
         <Col xs={24}>
             <p><Copyright /></p>
         </Col>
-    </Row>;
+    </Row>
+);

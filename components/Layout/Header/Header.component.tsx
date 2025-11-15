@@ -8,8 +8,9 @@ import { HeaderProps } from "./Header.d";
 import styles from './Header.module.scss';
 import { HeaderBanner } from "./HeaderBanner";
 import { Col, Row } from "antd";
+import { overridable } from "@core/lib/overridable";
 
-export const HeaderComponent = ({showStoreMenu, showTopMenu, showFirstColumn }:HeaderProps) => <div className={styles.header}>
+export const HeaderComponent = overridable(({showStoreMenu, showTopMenu, showFirstColumn }:HeaderProps) => <div className={styles.header}>
     <HeaderBanner />
     {showTopMenu && <LinkList id="top" className={styles.topMenu} />}
     {showStoreMenu && <Row className={styles.pageHeader}>
@@ -26,4 +27,4 @@ export const HeaderComponent = ({showStoreMenu, showTopMenu, showFirstColumn }:H
             <CartBtn />
         </Col>
     </Row>}
-</div>;
+</div>);
