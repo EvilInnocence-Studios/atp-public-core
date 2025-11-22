@@ -5,6 +5,7 @@ export declare interface IBrandLinkProps {
 // What gets passed into the component from the parent as attributes
 export declare interface IBrandLinkInputProps {
 
+    classes?: any;
 }
 
 export type BrandLinkProps = IBrandLinkInputProps & IBrandLinkProps;

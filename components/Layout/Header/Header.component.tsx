@@ -10,19 +10,19 @@ import { HeaderBanner } from "./HeaderBanner";
 import { Col, Row } from "antd";
 import { overridable } from "@core/lib/overridable";
 
-export const HeaderComponent = overridable(({showStoreMenu, showTopMenu, showFirstColumn }:HeaderProps) => <div className={styles.header}>
+export const HeaderComponent = overridable(({ showStoreMenu, showTopMenu, showFirstColumn, classes = styles }: HeaderProps) => <div className={classes.header}>
     <HeaderBanner />
-    {showTopMenu && <LinkList id="top" className={styles.topMenu} />}
-    {showStoreMenu && <Row className={styles.pageHeader}>
-        {showFirstColumn && <Col xs={24} lg={9} className={styles.links}>
+    {showTopMenu && <LinkList id="top" className={classes.topMenu} />}
+    {showStoreMenu && <Row className={classes.pageHeader}>
+        {showFirstColumn && <Col xs={24} lg={9} className={classes.links}>
             <BrandLink />
             &nbsp;
             <ShopLink />
         </Col>}
-        <Col xs={16} lg={{span: 6, push: showFirstColumn ? 0 : 9}} className={styles.search}>
+        <Col xs={16} lg={{ span: 6, push: showFirstColumn ? 0 : 9 }} className={classes.search}>
             <ProductSearchInput />
         </Col>
-        <Col xs={8} lg={{span: 9, push: showFirstColumn ? 0 : 9}} className={styles.account}>
+        <Col xs={8} lg={{ span: 9, push: showFirstColumn ? 0 : 9 }} className={classes.account}>
             <AccountMenu />
             <CartBtn />
         </Col>

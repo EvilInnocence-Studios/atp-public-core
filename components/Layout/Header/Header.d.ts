@@ -10,6 +10,7 @@ export declare interface IHeaderProps {
 // What gets passed into the component from the parent as attributes
 export declare interface IHeaderInputProps {
 
+    classes?: any;
 }
 
 export type HeaderProps = IHeaderInputProps & IHeaderProps;

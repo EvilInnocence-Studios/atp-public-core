@@ -3,9 +3,9 @@ import { HeaderBannerProps } from "./HeaderBanner.d";
 import styles from './HeaderBanner.module.scss';
 import { overridable } from "@core/lib/overridable";
 
-export const HeaderBannerComponent = overridable(({banner}:HeaderBannerProps) => <>
-    {banner && <div className={styles.banner}>
-        <Banner className={styles.headerBanner} banner={banner} />
+export const HeaderBannerComponent = overridable(({ banner, classes = styles }: HeaderBannerProps) => <>
+    {banner && <div className={classes.banner}>
+        <Banner className={classes.headerBanner} banner={banner} />
     </div>}
 </>);
 

@@ -7,17 +7,17 @@ import { FooterProps } from "./Footer.d";
 import styles from './Footer.module.scss';
 import { overridable } from "@core/lib/overridable";
 
-export const FooterComponent = overridable(({}:FooterProps) =>
-    <Row gutter={16} className={styles.footer}>
+export const FooterComponent = overridable(({ classes = styles }: FooterProps) =>
+    <Row gutter={16} className={classes.footer}>
         <Col xs={24} sm={6}>
-            <div className={styles.socialLinksContainer}>
+            <div className={classes.socialLinksContainer}>
                 <SocialLinks />
             </div>
         </Col>
         <Col xs={24} sm={9} lg={12}>
             <LinkList id="footer" />
         </Col>
-        <Col xs={24} sm={6} className={styles.newsletter}>
+        <Col xs={24} sm={6} className={classes.newsletter}>
             <MailchimpForm />
         </Col>
         <Col xs={24}>
