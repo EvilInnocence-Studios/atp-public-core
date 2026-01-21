@@ -1,8 +1,7 @@
 import { overridable } from "@core/lib/overridable";
-import {HomepageProps} from "./Homepage.d";
-import styles from './Homepage.module.scss';
 import { Layout } from "@theming/components/Layout";
+import { HomepageProps } from "./Homepage.d";
 
-export const HomepageComponent = overridable(({classes = styles}:HomepageProps) =>
+export const HomepageComponent = overridable(({}:HomepageProps) =>
     <Layout element="homepage"/>
 );
