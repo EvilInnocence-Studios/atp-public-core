@@ -4,20 +4,17 @@ import { ScrollToTop } from "@core/components/ScrollToTop";
 import { overridable } from "@core/lib/overridable";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import { Layout } from "@theming/components/Layout";
-import { useTheme } from "@theming/lib/useTheme";
 import { LoginModal } from "@uac/components/LoginModal";
 import { useLoginForm } from "@uac/lib/useLoginForm";
-import { ConfigProvider } from "antd";
 import Favicon from 'react-favicon';
 import { BrowserRouter } from "react-router-dom";
 
 const App = overridable(() => {
   const clientId = useSetting("paypalClientId");
   const logoUrl = useSetting("siteLogoUrl");
-  const theme = useTheme();
   const loginModal = useLoginForm();
 
-  return clientId ? <ConfigProvider theme={theme}>
+  return clientId ? <>
     {!!logoUrl && <Favicon url={logoUrl || undefined} />}
     <PayPalScriptProvider options={{
       clientId,
@@ -37,7 +34,7 @@ const App = overridable(() => {
         </div>
       </BrowserRouter>
     </PayPalScriptProvider>
-  </ConfigProvider> : null;
+  </> : null;
 });
 
 export default App
