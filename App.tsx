@@ -6,6 +6,7 @@ import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import { Layout } from "@theming/components/Layout";
 import Favicon from 'react-favicon';
 import { BrowserRouter } from "react-router-dom";
+import { Analytics } from "@analytics/components/Analytics";
 
 const App = overridable(() => {
   const clientId = useSetting("paypalClientId");
@@ -24,8 +25,9 @@ const App = overridable(() => {
       </div>
       <title><Setting id="siteName" /></title>
       <BrowserRouter>
+        <Analytics />
         <div className="app">
-          <Layout element="layout"/>
+          <Layout element="layout" />
           <ScrollToTop />
         </div>
       </BrowserRouter>
