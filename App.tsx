@@ -1,23 +1,19 @@
+import { Analytics } from "@analytics/components/Analytics";
 import { Setting } from "@common/components/Setting";
 import { useSetting } from "@common/lib/setting/services";
 import { ScrollToTop } from "@core/components/ScrollToTop";
 import { overridable } from "@core/lib/overridable";
-import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+import { AppWrapper } from "@core/lib/providerRegistry";
 import { Layout } from "@theming/components/Layout";
 import Favicon from 'react-favicon';
 import { BrowserRouter } from "react-router-dom";
-import { Analytics } from "@analytics/components/Analytics";
 
 const App = overridable(() => {
-  const clientId = useSetting("paypalClientId");
   const logoUrl = useSetting("siteLogoUrl");
 
-  return clientId ? <>
+  return <>
     {!!logoUrl && <Favicon url={logoUrl || undefined} />}
-    <PayPalScriptProvider options={{
-      clientId,
-      vault: true,
-    }}>
+    <AppWrapper>
       {/* This is a hidden input field to stop the browser from autofilling the search field in the header*/}
       <div style={{ width: 0, position: "absolute", right: 999999, top: 0 }}>
         <input />
@@ -31,8 +27,8 @@ const App = overridable(() => {
           <ScrollToTop />
         </div>
       </BrowserRouter>
-    </PayPalScriptProvider>
-  </> : null;
+    </AppWrapper>
+  </>;
 });
 
 export default App
