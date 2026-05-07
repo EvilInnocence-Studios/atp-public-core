@@ -7,6 +7,19 @@ import { AppWrapper } from "@core/lib/providerRegistry";
 import { Layout } from "@theming/components/Layout";
 import Favicon from 'react-favicon';
 import { BrowserRouter } from "react-router-dom";
+import { useLayoutTheme } from "@theming/lib/useTheme";
+
+const Preview = () => {
+  const {theme, preview} = useLayoutTheme();
+  return preview && <div style={{
+    position: "fixed",
+    top: 10,
+    left: 10,
+    background: "red",
+    color: "white",
+    padding: 10
+}}> Preview Mode: {theme?.name}</div>
+}
 
 const App = overridable(() => {
   const logoUrl = useSetting("siteLogoUrl");
@@ -21,6 +34,7 @@ const App = overridable(() => {
       </div>
       <title><Setting id="siteName" /></title>
       <BrowserRouter>
+        <Preview />
         <Analytics />
         <div className="app">
           <Layout element="layout" />
