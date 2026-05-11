@@ -37,7 +37,7 @@ const App = overridable(() => {
         <Preview />
         <Analytics />
         <div className="app">
-          <Layout element="layout" />
+          <Layout element="layout" global />
           <ScrollToTop />
         </div>
       </BrowserRouter>
